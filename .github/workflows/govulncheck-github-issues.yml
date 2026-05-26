@@ -13,7 +13,7 @@ jobs:
       matrix: ${{ steps.set-matrix.outputs.matrix }}
     steps:
       - name: Checkout Configuration
-        uses: actions/checkout@v6
+        uses: actions/checkout@1af3b93b6815bc44a9784bd300feb67ff0d1eeb3 # v6.0.0
 
       - name: Load Repository List
         id: set-matrix
@@ -38,7 +38,7 @@ jobs:
         repo: ${{ fromJson(needs.load-targets.outputs.matrix) }}
     steps:
       - name: Set up Go
-        uses: actions/setup-go@v6
+        uses: actions/setup-go@44694675825211faa026b3c33043df3e48a5fa00 # v6.0.0
         with:
           go-version: 'stable'
 
@@ -168,7 +168,7 @@ jobs:
           jq -s --arg repo "$TARGET_REPO" --arg branch "$TARGET_BRANCH" '{repo: $repo, branch: $branch, findings: .}' findings.jsonl > "report-${REPO_SAFE_NAME}.json"
 
       - name: Upload Findings Artifact
-        uses: actions/upload-artifact@v7
+        uses: actions/upload-artifact@bbbca2ddaa5d8feaa63e36b76fdaad77386f024f # v7.0.0
         with:
           name: findings-${{ env.REPO_SAFE_NAME }}
           path: report-${{ env.REPO_SAFE_NAME }}.json
@@ -183,7 +183,7 @@ jobs:
       contents: read
     steps:
       - name: Download All Artifacts
-        uses: actions/download-artifact@v7
+        uses: actions/download-artifact@37930b1c2abaa49bbe596cd826c3c89aef350131 # v7.0.0
         with:
           pattern: findings-*
           path: all-findings
