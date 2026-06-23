@@ -5,11 +5,7 @@
   },
   {
     "name": "openbao/openbao",
-    "branch": "release/2.5.x"
-  },
-  {
-    "name": "openbao/openbao",
-    "branch": "release/2.4.x"
+    "branch": "release/2.6.x"
   },
   {
     "name": "openbao/openbao-k8s",
