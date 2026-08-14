@@ -30,13 +30,5 @@
   {
     "name": "openbao/go-secure-stdlib",
     "branch": "main"
-  },
-  {
-    "name": "openbao/openbao-secrets-operator",
-    "branch": "main"
-  },
-  {
-    "name": "openbao/openbao-plugin-auth-jwt",
-    "branch": "main"
   }
 ]
