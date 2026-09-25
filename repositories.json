@@ -20,19 +20,11 @@
     "branch": "main"
   },
   {
-    "name": "openbao/go-kms-wrapping",
-    "branch": "main"
-  },
-  {
     "name": "openbao/openbao-plugin-secrets-oauthapp",
     "branch": "main"
   },
   {
     "name": "openbao/openbao-plugins",
-    "branch": "main"
-  },
-  {
-    "name": "openbao/go-secure-stdlib",
     "branch": "main"
   }
 ]
