@@ -5,6 +5,10 @@
   },
   {
     "name": "openbao/openbao",
+    "branch": "release/2.7.x"
+  },
+  {
+    "name": "openbao/openbao",
     "branch": "release/2.6.x"
   },
   {
